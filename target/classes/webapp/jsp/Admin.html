@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<section>
+	<form action="/Training/view.do" id="dummyForm" method="get">
+	</form>
+		<form method="post" action="insert" commandName="product" enctype="multipart/form-data" id="myForm">
+		<!-- <a href="javascript:void(0);" onclick="javascirpt:viewEmployee();">View All Employee Details</a> -->
+		
+		<br><br>
+			<fieldset style="width: fit-content; align-items: center;background-color: skyblue;">
+				<legend style="border-style: solid; border-color: blue; border-width: thick; padding-left: 10px;    background-color: cornsilk;
+					">Products
+					</legend>
+				<div style="text-align: left; left: 50px; padding-left: 30%;">
+
+					<div>
+
+						<label for="name">ProductName:</label> <input type="text"
+							name="username" style="margin-left: 45px;border-image-width: auto;    background-color: cornsilk;"
+							/><br>
+
+					</div>
+					<div>
+						<br> <label for="name">size:</label> <input
+							type="password" name="password" style="margin-left: 52px; border-bottom-width: inherit;     background-color: cornsilk;
+							" />
+					</div>
+
+					<div>
+						<br> <label for="name">Quantity:</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email"
+							placeholder="sophie@example.com" style="margin-left: 55px; border-bottom-width: inherit;     background-color: cornsilk;
+							" />
+					</div>
+					<div>
+						<br> <label for="name">Price:</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email"
+							placeholder="sophie@example.com" style="margin-left: 55px; border-bottom-width: inherit;     background-color: cornsilk;
+							" />
+					</div>
+					<div>
+						<br> <label for="name">PersonCategory:</label>
+						 <select style="margin-left: 66px;" name="country" />
+						<option value="india">F</option>
+						<option value="usa">M</option>
+						<option value="uk">K</option>
+						
+						</select>
+						<div>
+							<br> <label for="name">ItemCategories:</label> 
+							<select	style="margin-left: 64px; border-bottom-width: inherit;" name="location"/>
+							<option value="coimbatore">Clothes</option>
+							<option value="bangalore">Shoes</option>
+							<option value="delhi">Toys</option>
+							<option value="hydrabad">Cosmetics</option>
+							<option value="hydrabad">Electronics</option>
+							</select>
+						</div>
+						
+						<input type="file" name="file" id="file">
+						
+						<br> <input type="submit" name="submit" id="submit">
+						
+						
+						&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="javascript:viewEmployee();" type="button" >View Products</button>
+						
+					</div>
+			</fieldset>
+		</form>
+	</section>
+</body>
+<script type="text/javascript">
+function viewEmployee(){
+
+	debugger;
+	document.getElementById("dummyForm").submit();
+	}
+	</script>
+</html>
